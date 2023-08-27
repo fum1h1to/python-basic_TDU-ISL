@@ -10,11 +10,3 @@ eng = 50
 # 上の 3 つに当てはまらない: "C"
 
 # （コードが書けたら、math と eng の値を変更して確かめよう）
-if math >= 80 and eng >= 80:
-  print("S")
-elif (math >= 80 or eng >= 80) and math >= 60 and eng >= 60:
-  print("A")
-elif math >= 80 or eng >= 80:
-  print("B")
-else:
-  print("C")
