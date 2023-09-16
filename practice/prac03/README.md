@@ -10,6 +10,34 @@ Tech Corpの授業員データをjson形式で受け取りました。次の3つ
 
 ※ json.loadsを用い、辞書型にしてから取り出してください。
 
+なお、受け取ったjsonデータは次のような情報が入ります。
+
+| キー名 | 概要 | データ形式 |
+| ---- | ---- | ---- |
+| company | 会社名 | string |
+| headquarters | 本部 | string |
+| departments | 部門 | list of string |
+| employees | 従業員 | list of ```Employee``` |
+
+
+*Employee*
+
+| キー名 | 概要 | データ形式 |
+| ---- | ---- | ---- |
+| id | ID | int |
+| name | 従業員名 | string |
+| department | 部門 | string |
+| projects | プロジェクト | list of ```Project``` |
+
+
+*Project*
+
+| キー名 | 概要 | データ形式 |
+| ---- | ---- | ---- |
+| id | ID | int |
+| name | プロジェクト名 | string |
+| status | ステータス | string |
+
 ## 出力例
 
 ```
